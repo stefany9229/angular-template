@@ -1,0 +1,11 @@
+<ng-template #templateLayout>
+  <h1>Hola! Soy un template :D</h1>
+</ng-template>
+
+<button (click)="mostrar()">Mostrar template</button>
+
+<div *ngIf="visible; else templateLayout">
+  <div>Soy el conenido inicial</div>
+</div>
+
+<router-outlet></router-outlet>
